@@ -30,9 +30,14 @@ class GildedRoseTest {
             Arguments.of("Aged Brie", 0, 50, 50),
             Arguments.of("Sulfuras, Hand of Ragnaros", 0, 1, 1),
             Arguments.of("Sulfuras, Hand of Ragnaros", -1, 1, 1),
+            Arguments.of("Sulfuras, Hand of Ragnaros", 10, 60, 60),
             Arguments.of("Backstage passes to a TAFKAL80ETC concert", 0, 2, 0),
             Arguments.of("Backstage passes to a TAFKAL80ETC concert", 11, 2, 3),
-            Arguments.of("Backstage passes to a TAFKAL80ETC concert", 10, 2, 4)
+            Arguments.of("Backstage passes to a TAFKAL80ETC concert", 10, 2, 4),
+            Arguments.of("Backstage passes to a TAFKAL80ETC concert", 10, 70, 71),
+            Arguments.of("Backstage passes to a TAFKAL80ETC concert", 5, 70, 71),
+            Arguments.of("+5 Dexterity Vest", 10, 20, 19),
+            Arguments.of("Conjured Mana Cake", 3, 6, 5)
         );
     }
 }
