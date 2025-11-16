@@ -9,11 +9,7 @@ class GildedRose {
 
     public void updateQuality() {
         for(Item item : this.getItems()){
-            calculateQuality(item);
-            decrementSellIn(item);
-            if ( item.getSellIn() < 0) {
-                reCalculateQuality(item);
-            }
+            QualityProcessor.process(item);
         }
     }
 
