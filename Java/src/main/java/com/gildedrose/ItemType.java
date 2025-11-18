@@ -3,7 +3,8 @@ package com.gildedrose;
 public enum ItemType {
     AGED_BRIE("Aged Brie"),
     BACKSTAGE_PASS("Backstage passes to a TAFKAL80ETC concert"),
-    SULFURAS("Sulfuras, Hand of Ragnaros");
+    SULFURAS("Sulfuras, Hand of Ragnaros"),
+    STANDARD("");
 
     private final String nameItem;
 
@@ -21,7 +22,7 @@ public enum ItemType {
                 return type;
             }
         }
-        return null;
+        return STANDARD;
     }
 
 }
