@@ -7,12 +7,4 @@ public class AgedBrieStrategy implements ItemQualityStrategy {
             item.setQuality(item.getQuality() + 1);
         }
     }
-
-    @Override
-    public void updateSellIn(Item item) {
-        item.setSellIn(item.getSellIn() - 1);
-        if (item.getSellIn() < 0) {
-            this.updateQuality(item);
-        }
-    }
 }
