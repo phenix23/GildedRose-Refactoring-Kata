@@ -7,8 +7,8 @@ public class BackstagePassStrategy implements ItemQualityStrategy {
     public static final int SIX_DAYS = 6;
 
     @Override
-    public void updateQuality(Item item) {
-        if (item.getQuality() < 50) {
+    public void updateQualityItem(Item item) {
+        if (item.getQuality() < FIFTY_DAYS) {
             item.setQuality(item.getQuality() + 1);
             if ((item.getSellIn() < ELEVEN_DAYS)) {
                 item.setQuality(item.getQuality() + 1);
